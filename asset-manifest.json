@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/LeagueClient2.0/static/css/main.31d6cfe0.css",
+    "main.js": "/LeagueClient2.0/static/js/main.a62d70a7.js",
+    "index.html": "/LeagueClient2.0/index.html",
+    "main.a62d70a7.js.map": "/LeagueClient2.0/static/js/main.a62d70a7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.a62d70a7.js"
+  ]
+}
