@@ -67,3 +67,7 @@
     margin: 2px 0;
     border: 3px solid #3D3D3D;
 }
+
+.headerBackground {
+    position: absolute;
+}

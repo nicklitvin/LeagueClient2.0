@@ -3,16 +3,30 @@ import styles from "../css/CollectionsChampions.module.css";
 import headerStyle from "../css/CollectionsHeader.module.css";
 import scrollStyle from "../css/CollectionsScroll.module.css";
 
-import header from "../img/CollectionsHeader.png";
 import scroll from "../img/CollectionsChampionsScroll.png";
 import champs from "../img/CollectionsChampionsChampions.png";
 import difficulty from "../img/CollectionsChampionsDifficulty.png";
 import exp from "../img/CollectionsChampionsXP.png";
 
+import { NavLink } from 'react-router-dom';
+
 export default function CollectionsChampions() {
     return (
         <div className={styles.collectionsChampionsContainer}>
-            <img src={header} alt="collections-header" className={headerStyle.header}></img>
+            <div className={headerStyle.headerContainer}>
+                <div className={headerStyle.header}>
+
+                    <NavLink style={{textDecoration: 'none'}} to="/collectionsChampions">
+                        <p className={`${headerStyle.headerOption} ${headerStyle.selectedOption}`}>Champions</p>
+                    </NavLink>
+                    <p className={headerStyle.headerOption}>Skins</p>
+                    <p className={headerStyle.headerOption}>Emotes</p>
+                    <p className={headerStyle.headerOption}>Spells</p>
+                    <p className={headerStyle.headerOption}>Icons</p>
+                    <p className={headerStyle.headerOption}>Wards</p>
+                    <p className={headerStyle.headerOption}>Chromas</p>
+                </div>
+            </div>
 
             <img src={champs} alt="collections-champions" className={styles.champSelect}></img>
 

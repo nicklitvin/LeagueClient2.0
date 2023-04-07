@@ -13,3 +13,7 @@ p, button {
     font-family: "Titan-One";
     src: url("./TitanOne-Regular.ttf") format("truetype");
 }
+
+.header-link {
+    text-decoration: none;
+}
