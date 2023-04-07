@@ -3,3 +3,17 @@ html, body {
     padding: 0%;
     background-color:white;
 }
+
+p, button {
+    font-family: "Titan-One";
+    color: white;
+}
+
+@font-face {
+    font-family: "Titan-One";
+    src: url("./TitanOne-Regular.ttf") format("truetype");
+}
+
+.header-link {
+    text-decoration: none;
+}
