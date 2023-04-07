@@ -1,5 +1,3 @@
-import '../css/Play.css';
-
 function Play() {
   return (
     <div>
