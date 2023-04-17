@@ -2,7 +2,7 @@ import headerStyle from "../../css/Collections/Header.module.css";
 
 import { NavLink } from 'react-router-dom';
 
-export default function CollectionsChampionsHeader(selectedOptionNumber) {
+export default function ChampionsHeader(selectedOptionNumber) {
     const options = [
         ["Overview","/collectionsChampions"],
         ["Skins","/collectionsChampionsSkins"],
