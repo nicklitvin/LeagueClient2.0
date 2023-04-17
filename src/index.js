@@ -16,7 +16,7 @@ root.render(
       <Route path="/" element={ <Home/> }/>
       <Route path="/play" element= { <Play/>}/>
       <Route path="/collectionsChampions" element = {<CollectionsChampions/>}/>
-      <Route path="/collectionsChampionsSkins" element={ <CollectionsChampionsSkins/> }/>
+      <Route path="/collectionsChampionsChampionSkins" element={ <CollectionsChampionsSkins/> }/>
     </Routes>
   </BrowserRouter>
 );

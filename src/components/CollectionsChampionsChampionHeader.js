@@ -2,19 +2,17 @@ import headerStyle from "../css/CollectionsHeader.module.css";
 
 import { NavLink } from 'react-router-dom';
 
-export default function CollectionsHeader(selectedOptionNumber) {
+export default function CollectionsChampionsHeader(selectedOptionNumber) {
     const options = [
-        ["Champions","/collectionsChampions"],
+        ["Overview","/collectionsChampions"],
         ["Skins","/collectionsChampionsSkins"],
-        ["Spells","/collectionsChampionsSpells"],
-        ["Icons","/collectionsChampionsIcons"],
-        ["Wards","/collectionsChampionsWards"],
-        ["Chromas","/collectionsChampionsChromas"]
+        ["Abilities","/collectionsChampionsAbilities"],
+        ["Progressions","/collectionsChampionsProgressions"],
     ]
     const result = [];
 
     for(let i = 0; i < options.length; i++) {
-        if(selectedOptionNumber - 1 == i) {
+        if(selectedOptionNumber - 1 === i) {
             result.push(
                 <NavLink key={`header-child-${i}`} style={{textDecoration: 'none'}} to={options[i][1]}>
                     <p className={`${headerStyle.headerOption} ${headerStyle.selectedOption}`}>{options[i][0]}</p>

@@ -1,13 +1,12 @@
 import styles from "../css/CollectionsChampions.module.css";
 
-import scrollStyle from "../css/CollectionsScroll.module.css";
-
 import scroll from "../img/CollectionsChampionsScroll.png";
 import champs from "../img/CollectionsChampionsChampions.png";
 import difficulty from "../img/CollectionsChampionsDifficulty.png";
 import exp from "../img/CollectionsChampionsXP.png";
 
 import CollectionsHeader from "./CollectionsHeader.js";
+import { NavLink } from "react-router-dom";
 
 export default function CollectionsChampions() {
     return (
@@ -37,9 +36,15 @@ export default function CollectionsChampions() {
             </div>
             
             <div className={styles.greyButtonsContainer}>
-                <button class={styles.greyButton}>Progressions</button>
-                <button class={styles.greyButton}>Abilities</button>
-                <button class={styles.greyButton}>Skins</button>
+                <NavLink to="/collectionsChampionsChampionProgressions">
+                    <button class={styles.greyButton}>Progressions</button>
+                </NavLink>
+                <NavLink to="/collectionsChampionsChampionAbilities">
+                    <button class={styles.greyButton}>Abilities</button>
+                </NavLink>
+                <NavLink to="/collectionsChampionsChampionSkins">
+                    <button class={styles.greyButton}>Skins</button>
+                </NavLink>
             </div>
 
             <div className={styles.greyButtonsContainerRight}>
@@ -49,8 +54,8 @@ export default function CollectionsChampions() {
             </div>
 
             <div>
-                <img src={scroll} alt="collections-scroll" className={scrollStyle.scroll}></img>
-                <p className={scrollStyle.scrollText}>2/163</p>
+                <img src={scroll} alt="collections-scroll" className={styles.scroll}></img>
+                <p className={styles.scrollText}>2/163</p>
             </div>
         </div>
     )
