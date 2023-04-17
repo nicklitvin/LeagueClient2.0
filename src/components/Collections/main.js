@@ -1,16 +1,16 @@
-import styles from "../css/CollectionsChampions.module.css";
+import styles from "../../css/Collections/Main.module.css";
 
-import scroll from "../img/CollectionsChampionsScroll.png";
-import champs from "../img/CollectionsChampionsChampions.png";
-import difficulty from "../img/CollectionsChampionsDifficulty.png";
-import exp from "../img/CollectionsChampionsXP.png";
+import scroll from "../../img/Collections/MainScroll.png";
+import champs from "../../img/Collections/MainChampions.png";
+import difficulty from "../../img/Collections/MainDifficulty.png";
+import exp from "../../img/Collections/MainXP.png";
 
-import CollectionsHeader from "./CollectionsHeader.js";
 import { NavLink } from "react-router-dom";
+import CollectionsHeader from "./Header.js";
 
 export default function CollectionsChampions() {
     return (
-        <div className={styles.collectionsChampionsContainer}>
+        <div className={styles.pageContainer}>
 
             {CollectionsHeader(1)}
 
@@ -36,13 +36,13 @@ export default function CollectionsChampions() {
             </div>
             
             <div className={styles.greyButtonsContainer}>
-                <NavLink to="/collectionsChampionsChampionProgressions">
+                <NavLink to="/collectionsChampionsProgressions">
                     <button class={styles.greyButton}>Progressions</button>
                 </NavLink>
-                <NavLink to="/collectionsChampionsChampionAbilities">
+                <NavLink to="/collectionsChampionsAbilities">
                     <button class={styles.greyButton}>Abilities</button>
                 </NavLink>
-                <NavLink to="/collectionsChampionsChampionSkins">
+                <NavLink to="/collectionsChampionsSkins">
                     <button class={styles.greyButton}>Skins</button>
                 </NavLink>
             </div>

@@ -1,4 +1,4 @@
-import headerStyle from "../css/CollectionsHeader.module.css";
+import headerStyle from "../../css/Collections/Header.module.css";
 
 import { NavLink } from 'react-router-dom';
 

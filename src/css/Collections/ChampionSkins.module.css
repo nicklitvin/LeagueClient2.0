@@ -1,7 +1,7 @@
 .collectionsChampionsSkinsContainer {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/CollectionsChampionsChampionSkinsBackground.png");
+    background-image: url("../../img/Collections/MainBackground.png");
     background-size: cover;
     background-repeat: no-repeat;
 }

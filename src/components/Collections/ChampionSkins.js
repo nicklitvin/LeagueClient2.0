@@ -1,10 +1,10 @@
-import styles from "../css/CollectionsChampionsSkins.module.css";
-import otherStyles from "../css/CollectionsChampions.module.css";
+import styles from "../../css/Collections/ChampionSkins.module.css";
+import otherStyles from "../../css/Collections/Main.module.css";
 
-import skins from "../img/CollectionsChampionsSkinsSkins.png";
-import scroll from "../img/CollectionsChampionsChampionSkinsScroll.png";
+import skins from "../../img/Collections/ChampionSkinsSkins.png";
+import scroll from "../../img/Collections/ChampionSkinsScroll.png";
 
-import CollectionsChampionsHeader from "./CollectionsChampionsChampionHeader.js";
+import CollectionsChampionsHeader from "./ChampionHeader.js";
 
 export default function CollectionsChampionsSkins() {
     return (
