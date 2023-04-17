@@ -8,6 +8,7 @@ import Play from './components/Play.js';
 import Home from './components/Home.js';
 import CollectionsChampions from './components/Collections/main.js';
 import CollectionsChampionsSkins from './components/Collections/ChampionSkins.js';
+import CollectionsChampionAbilities from './components/Collections/ChampionAbilities.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +18,7 @@ root.render(
       <Route path="/play" element= { <Play/>}/>
       <Route path="/collectionsChampions" element = {<CollectionsChampions/>}/>
       <Route path="/collectionsChampionsSkins" element={ <CollectionsChampionsSkins/> }/>
+      <Route path="/collectionsChampionsAbilities" element={<CollectionsChampionAbilities/>}></Route>
     </Routes>
   </BrowserRouter>
 );
