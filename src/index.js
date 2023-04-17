@@ -7,6 +7,7 @@ import "./index.css";
 import Play from './components/Play.js';
 import Home from './components/Home.js';
 import CollectionsChampions from './components/CollectionsChampions.js';
+import CollectionsChampionsSkins from './components/CollectionsChampionsSkins.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <Route path="/" element={ <Home/> }/>
       <Route path="/play" element= { <Play/>}/>
       <Route path="/collectionsChampions" element = {<CollectionsChampions/>}/>
+      <Route path="/collectionsChampionsSkins" element={ <CollectionsChampionsSkins/> }/>
     </Routes>
   </BrowserRouter>
 );
