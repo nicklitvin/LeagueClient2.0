@@ -1,37 +1,36 @@
-import styles from "../../css/Collections/Icons.module.css";
-import otherStyles from "../../css/Collections/Emotes.module.css";
+import styles from "../../css/Collections/Chromas.module.css";
 import mStyles from "../../css/Collections/Main.module.css";
 import eStyles from "../../css/Collections/Emotes.module.css";
 import CollectionsHeader from "./Header";
 
-import scroll from "../../img/Collections/IconsScroll.png";
-import list from "../../img/Collections/IconsList.png";
-import selected from "../../img/Collections/IconsSelected.png";
+import scroll from "../../img/Collections/ChromasScroll.png";
+import list from "../../img/Collections/ChromasList.png";
+import selected from "../../img/Collections/ChromasSelected.png";
 
-export default function CollectionsIcons() {
+export default function CollectionsChromas() {
     return(
         <div className={styles.pageContainer}>
             <div>
                 <img src={scroll} alt="collections-scroll" className={mStyles.scroll}></img>
-                <p className={mStyles.scrollText}>8/500</p>
+                <p className={mStyles.scrollText}>1/3</p>
             </div>
-
-            <img src={list} className={otherStyles.emoteList} alt="emote-list" ></img>
 
             <div className={styles.selectedContainer}>
                 <img src={selected} alt="selected" className={styles.selected}></img>
                 <div className={styles.selectedTextContainer}>
                     <div className={styles.textRowDiv}>
-                        <p className={styles.textRow}>Champie Nunu</p>
+                        <p className={styles.textRow}>Coven Ahri (Dark Ritual Chroma)</p>
                     </div>
                     <div className={styles.textRowDiv}>
-                        <p className={styles.textRow}>Only available in the Essence Emporium</p>
+                        <p className={styles.textRow}>Skin released 09.12.2021</p>
                     </div>
                     <div className={styles.textRowDiv}>
-                        <p className={`${styles.textRow} ${styles.gold}`}>Acquired 01.01.2023</p>
+                        <p className={`${styles.textRow} ${styles.gold}`}>Acquired 01.13.2023</p>
                     </div>
                 </div>
             </div>
+
+            <img src={list} className={styles.chromaList} alt="emote-list" ></img>
 
             <div className={eStyles.greyButtonsContainerRight}>
                 <button class={mStyles.blackButton}>Search</button>
@@ -39,7 +38,7 @@ export default function CollectionsIcons() {
                 <button class={mStyles.greyButton}>By Year 🔻</button>
             </div>
 
-            {CollectionsHeader(5)}
+            {CollectionsHeader(7)}
         </div>
     )
 }
