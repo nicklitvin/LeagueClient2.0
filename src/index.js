@@ -12,6 +12,8 @@ import CollectionsChampionAbilities from './components/Collections/ChampionAbili
 import CollectionsChampionProgressions from "./components/Collections/ChampionProgressions.js"
 import CollectionsSkins from "./components/Collections/Skins.js";
 import CollectionEmotes from "./components/Collections/Emotes.js";
+import CollectionSpells from "./components/Collections/Spells.js";
+import CollectionsIcons from "./components/Collections/Icons.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -24,7 +26,9 @@ root.render(
       <Route path="/collectionsChampionsAbilities" element={<CollectionsChampionAbilities/>}></Route>
       <Route path="/collectionsChampionsProgressions" element={<CollectionsChampionProgressions/>}></Route>
       <Route path="/collectionsSkins" element={<CollectionsSkins/>}></Route>
-      <Route path="/collectionEmotes" element={<CollectionEmotes/>}></Route>
+      <Route path="/collectionsEmotes" element={<CollectionEmotes/>}></Route>
+      <Route path="/collectionsSpells" element={<CollectionSpells/>}></Route>
+      <Route path="/collectionsIcons" element={<CollectionsIcons/>}></Route>
     </Routes>
   </BrowserRouter>
 );
