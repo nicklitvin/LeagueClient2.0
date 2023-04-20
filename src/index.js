@@ -14,6 +14,8 @@ import CollectionsSkins from "./components/Collections/Skins.js";
 import CollectionEmotes from "./components/Collections/Emotes.js";
 import CollectionSpells from "./components/Collections/Spells.js";
 import CollectionsIcons from "./components/Collections/Icons.js";
+import CollectionsWards from "./components/Collections/Wards.js";
+import CollectionsChromas from "./components/Collections/Chromas.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +31,8 @@ root.render(
       <Route path="/collectionsEmotes" element={<CollectionEmotes/>}></Route>
       <Route path="/collectionsSpells" element={<CollectionSpells/>}></Route>
       <Route path="/collectionsIcons" element={<CollectionsIcons/>}></Route>
+      <Route path="/collectionsWards" element={<CollectionsWards/>}></Route>
+      <Route path="/collectionsChromas" element={<CollectionsChromas/>}></Route>
     </Routes>
   </BrowserRouter>
 );

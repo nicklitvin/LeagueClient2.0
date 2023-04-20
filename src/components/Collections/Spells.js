@@ -16,7 +16,7 @@ export default function CollectionsSkins() {
                 </p>
                 <p> With the Hextech Flastraption rune, Hexhlash replaces
                     Flash when it’s on cooldown. 
-                </p> <br></br>
+                </p> 
                 <p>Cooldown - 300sec.</p>
                 <p>Available - All maps</p>
             </div>

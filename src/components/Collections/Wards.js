@@ -1,19 +1,19 @@
-import styles from "../../css/Collections/Icons.module.css";
-import otherStyles from "../../css/Collections/Emotes.module.css";
-import mStyles from "../../css/Collections/Main.module.css";
-import eStyles from "../../css/Collections/Emotes.module.css";
+import styles from "../../css/Collections/Wards.module.css";
 import CollectionsHeader from "./Header";
+import mStyles from "../../css/Collections/Main.module.css";
+import otherStyles from "../../css/Collections/Emotes.module.css";
 
-import scroll from "../../img/Collections/IconsScroll.png";
-import list from "../../img/Collections/IconsList.png";
-import selected from "../../img/Collections/IconsSelected.png";
+import scroll from "../../img/Collections/WardsScroll.png";
+import list from "../../img/Collections/WardsList.png";
+import selected from "../../img/Collections/WardsSelected.png";
 
-export default function CollectionsIcons() {
+
+export default function Wards() {
     return(
         <div className={styles.pageContainer}>
             <div>
                 <img src={scroll} alt="collections-scroll" className={mStyles.scroll}></img>
-                <p className={mStyles.scrollText}>8/500</p>
+                <p className={mStyles.scrollText}>1/200</p>
             </div>
 
             <img src={list} className={otherStyles.emoteList} alt="emote-list" ></img>
@@ -22,24 +22,23 @@ export default function CollectionsIcons() {
                 <img src={selected} alt="selected" className={styles.selected}></img>
                 <div className={styles.selectedTextContainer}>
                     <div className={styles.textRowDiv}>
-                        <p className={styles.textRow}>Champie Nunu</p>
+                        <p className={styles.textRow}>Underground Poro Ward</p>
                     </div>
                     <div className={styles.textRowDiv}>
-                        <p className={styles.textRow}>Only available in the Essence Emporium</p>
+                        <p className={styles.textRow}>This ward was released for purchase in the store in 2015</p>
                     </div>
                     <div className={styles.textRowDiv}>
-                        <p className={`${styles.textRow} ${styles.gold}`}>Acquired 01.01.2023</p>
+                        <p className={`${styles.textRow} ${styles.gold}`}>Acquired 01.01.2015</p>
                     </div>
                 </div>
             </div>
 
-            <div className={eStyles.greyButtonsContainerRight}>
+            <div className={styles.greyButtonsContainerRight}>
                 <button class={mStyles.blackButton}>Search</button>
                 <button class={mStyles.greyButton}>No Grouping</button>
-                <button class={mStyles.greyButton}>By Year 🔻</button>
+                <button class={mStyles.greyButton}>Alphabetical 🔻</button>
             </div>
-
-            {CollectionsHeader(5)}
+            {CollectionsHeader(6)}
         </div>
     )
 }
