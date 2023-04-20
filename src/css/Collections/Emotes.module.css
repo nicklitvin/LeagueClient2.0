@@ -1,0 +1,60 @@
+.pageContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../img/Collections/EmotesBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.emoteList {
+    position: absolute;
+    width: 90vw;
+    bottom: 8vh;
+    left: 5vw;
+}
+
+.emoteWheel {
+    position: absolute;
+    max-width: 20vw;
+    height: auto;
+    top: 15vh;
+    left: 5vw;
+}
+
+.wheelContainer {
+    position: absolute;
+    top: 25vh;
+    text-align: center;
+    font-size: 18px;
+}
+
+.wheelContainer p {
+    -webkit-text-stroke: 1px black;
+}
+
+.wheelContainer img {
+    max-width: 8vw;
+}
+
+.first {
+    left: 30vw;
+}
+
+.second {
+    left: 42vw;
+}
+
+.third {
+    left: 54vw;
+}
+
+.fourth {
+    left: 66vw;
+}
+
+.greyButtonsContainerRight {
+    position: absolute;
+    right: 5vw;
+    bottom: 42vh;
+    width: 15vw;
+}

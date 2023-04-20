@@ -6,6 +6,7 @@ export default function CollectionsHeader(selectedOptionNumber) {
     const options = [
         ["Champions","/collectionsChampions"],
         ["Skins","/collectionsSkins"],
+        ["Emotes","/collectionEmotes"],
         ["Spells","/collectionsSpells"],
         ["Icons","/collectionsIcons"],
         ["Wards","/collectionsWards"],
