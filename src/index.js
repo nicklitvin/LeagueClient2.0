@@ -13,6 +13,7 @@ import CollectionsChampionProgressions from "./components/Collections/ChampionPr
 import CollectionsSkins from "./components/Collections/Skins.js";
 import CollectionEmotes from "./components/Collections/Emotes.js";
 import CollectionSpells from "./components/Collections/Spells.js";
+import CollectionsIcons from "./components/Collections/Icons.js";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +28,7 @@ root.render(
       <Route path="/collectionsSkins" element={<CollectionsSkins/>}></Route>
       <Route path="/collectionsEmotes" element={<CollectionEmotes/>}></Route>
       <Route path="/collectionsSpells" element={<CollectionSpells/>}></Route>
+      <Route path="/collectionsIcons" element={<CollectionsIcons/>}></Route>
     </Routes>
   </BrowserRouter>
 );
