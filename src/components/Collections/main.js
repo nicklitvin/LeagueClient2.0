@@ -55,7 +55,7 @@ export default function CollectionsChampions() {
 
             <div>
                 <img src={scroll} alt="collections-scroll" className={styles.scroll}></img>
-                <p className={styles.scrollText}>2/163</p>
+                <p className={styles.scrollText}>6/50</p>
             </div>
         </div>
     )
