@@ -15,7 +15,7 @@ import CollectionSpells from "./components/Collections/Spells.js";
 import CollectionsIcons from "./components/Collections/Icons.js";
 import CollectionsWards from "./components/Collections/Wards.js";
 import CollectionsChromas from "./components/Collections/Chromas.js";
-import CollectionsChampions from './components/Collections/CollectionsChampions.js';
+import CollectionsChampions from './components/Collections/main.js';
 import NightMarket from './components/NightMarket.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
