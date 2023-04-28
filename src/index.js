@@ -16,6 +16,7 @@ import CollectionSpells from "./components/Collections/Spells.js";
 import CollectionsIcons from "./components/Collections/Icons.js";
 import CollectionsWards from "./components/Collections/Wards.js";
 import CollectionsChromas from "./components/Collections/Chromas.js";
+import TftHome from './components/TFT/tftHome.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -33,6 +34,7 @@ root.render(
       <Route path="/collectionsIcons" element={<CollectionsIcons/>}></Route>
       <Route path="/collectionsWards" element={<CollectionsWards/>}></Route>
       <Route path="/collectionsChromas" element={<CollectionsChromas/>}></Route>
+      <Route path="/tftHome" element={<TftHome/>}></Route>
     </Routes>
   </BrowserRouter>
 );
