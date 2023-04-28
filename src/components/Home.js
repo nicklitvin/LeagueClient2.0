@@ -10,6 +10,9 @@ export default function Home() {
       <NavLink to="/collectionsChampions">
         <button>Collections</button>
       </NavLink>
+      <NavLink to="/nightmarket">
+        <button>NightMarket</button>
+      </NavLink>
     </div>
   );
 }
