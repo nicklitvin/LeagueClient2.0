@@ -4,8 +4,7 @@
     height: 7vh;
     left: 0vw;
     top: 7vh;
-    background-image: url("../img/headerBackground.png");
-    background-size: cover;
+    background-image: url("../../img/headerBackground.png");
     background-repeat: no-repeat;
 }
 
@@ -23,10 +22,7 @@
     color: #A59500;
 }
 
-.headerOption:nth-child(1) {
+.selectedOption {
     color: white;
 }
 
-.header-link {
-    text-decoration: none;
-}

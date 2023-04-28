@@ -1,7 +1,7 @@
-.collectionsChampionsContainer {
+.pageContainer {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/CollectionsChampionsBackground.png");
+    background-image: url("../../img/Collections/MainBackground.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -70,4 +70,20 @@
 
 .headerBackground {
     position: absolute;
+}
+
+.scroll {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 50vw;
+}
+
+.scrollText {
+    position: absolute;
+    top: 94.8%;
+    left: 76%;
+    margin: 0;
+    font-size: 24px;
 }

@@ -1,0 +1,25 @@
+.pageContainer {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../img/Collections/ChampionAbilitiesBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.abilityDescriptionContainer {
+    width: 30vw;
+    position: absolute;
+    top: 30vh;
+    left: 5vw;
+}
+
+.abilityTitle {
+    font-size: 18px;
+}
+
+.abilityIcons {
+    position: absolute;
+    top: 80vh;
+    left: 50vw;
+    transform: translate(-50%,0);
+}

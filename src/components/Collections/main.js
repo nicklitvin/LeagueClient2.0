@@ -1,32 +1,18 @@
-import styles from "../css/CollectionsChampions.module.css";
+import styles from "../../css/Collections/Main.module.css";
 
-import headerStyle from "../css/CollectionsHeader.module.css";
-import scrollStyle from "../css/CollectionsScroll.module.css";
+import scroll from "../../img/Collections/MainScroll.png";
+import champs from "../../img/Collections/MainChampions.png";
+import difficulty from "../../img/Collections/MainDifficulty.png";
+import exp from "../../img/Collections/MainXP.png";
 
-import scroll from "../img/CollectionsChampionsScroll.png";
-import champs from "../img/CollectionsChampionsChampions.png";
-import difficulty from "../img/CollectionsChampionsDifficulty.png";
-import exp from "../img/CollectionsChampionsXP.png";
-
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import CollectionsHeader from "./Header.js";
 
 export default function CollectionsChampions() {
     return (
-        <div className={styles.collectionsChampionsContainer}>
-            <div className={headerStyle.headerContainer}>
-                <div className={headerStyle.header}>
+        <div className={styles.pageContainer}>
 
-                    <NavLink style={{textDecoration: 'none'}} to="/collectionsChampions">
-                        <p className={`${headerStyle.headerOption} ${headerStyle.selectedOption}`}>Champions</p>
-                    </NavLink>
-                    <p className={headerStyle.headerOption}>Skins</p>
-                    <p className={headerStyle.headerOption}>Emotes</p>
-                    <p className={headerStyle.headerOption}>Spells</p>
-                    <p className={headerStyle.headerOption}>Icons</p>
-                    <p className={headerStyle.headerOption}>Wards</p>
-                    <p className={headerStyle.headerOption}>Chromas</p>
-                </div>
-            </div>
+            {CollectionsHeader(1)}
 
             <img src={champs} alt="collections-champions" className={styles.champSelect}></img>
 
@@ -50,9 +36,15 @@ export default function CollectionsChampions() {
             </div>
             
             <div className={styles.greyButtonsContainer}>
-                <button class={styles.greyButton}>Progressions</button>
-                <button class={styles.greyButton}>Abilities</button>
-                <button class={styles.greyButton}>Skins</button>
+                <NavLink to="/collectionsChampionsProgressions">
+                    <button class={styles.greyButton}>Progressions</button>
+                </NavLink>
+                <NavLink to="/collectionsChampionsAbilities">
+                    <button class={styles.greyButton}>Abilities</button>
+                </NavLink>
+                <NavLink to="/collectionsChampionsSkins">
+                    <button class={styles.greyButton}>Skins</button>
+                </NavLink>
             </div>
 
             <div className={styles.greyButtonsContainerRight}>
@@ -61,10 +53,9 @@ export default function CollectionsChampions() {
                 <button class={styles.greyButton}>Show All</button>
             </div>
 
-
             <div>
-                <img src={scroll} alt="collections-scroll" className={scrollStyle.scroll}></img>
-                <p className={scrollStyle.scrollText}>2/163</p>
+                <img src={scroll} alt="collections-scroll" className={styles.scroll}></img>
+                <p className={styles.scrollText}>6/50</p>
             </div>
         </div>
     )
