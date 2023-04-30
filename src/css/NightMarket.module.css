@@ -1,0 +1,62 @@
+.buy{
+    background-color: #462863;
+    width: 100vw;
+    height: 100vh;
+}
+
+.champions img{
+    width: 13.4vw;
+    height: auto;
+    object-fit: contain;
+    margin: 10px
+}
+
+.champions{
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    top: 55%;
+}
+
+.undertitle{
+    margin: 0 20px;
+    font-size: 40px;
+    color: #D9C3ED;
+}
+
+.yourshop {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    text-align: center;
+    top: 9%;
+}
+
+.shoptitle {
+    margin: 0 20px;
+    font-size: 70px;
+    color: #D9C3ED;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 89%;
+    font-size: 15px;
+}
+
+.goldline {
+    position: absolute;
+    bottom: 12.5%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 90%;
+}

@@ -6,7 +6,6 @@ import "./index.css";
 
 import Play from './components/Play.js';
 import Home from './components/Home.js';
-import CollectionsChampions from './components/Collections/main.js';
 import CollectionsChampionsSkins from './components/Collections/ChampionSkins.js';
 import CollectionsChampionAbilities from './components/Collections/ChampionAbilities.js';
 import CollectionsChampionProgressions from "./components/Collections/ChampionProgressions.js"
@@ -16,6 +15,8 @@ import CollectionSpells from "./components/Collections/Spells.js";
 import CollectionsIcons from "./components/Collections/Icons.js";
 import CollectionsWards from "./components/Collections/Wards.js";
 import CollectionsChromas from "./components/Collections/Chromas.js";
+import CollectionsChampions from './components/Collections/main.js';
+import NightMarket from './components/NightMarket.js';
 import TftHome from './components/TFT/tftHome.js';
 import TftBattlepass from './components/TFT/TftBattlepass.js';
 import TftMatchHistory from './components/TFT/TftMatchHistory.js';
@@ -39,6 +40,7 @@ root.render(
       <Route path="/tftHome" element={<TftHome/>}></Route>
       <Route path="/tftBattlepass" element={<TftBattlepass/>}></Route>
       <Route path="/tftHistory" element={<TftMatchHistory/>}></Route>
+      <Route path="/nightmarket" element = {<NightMarket/>}/>
     </Routes>
   </BrowserRouter>
 );
