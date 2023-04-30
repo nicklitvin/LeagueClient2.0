@@ -18,6 +18,8 @@ import CollectionsChromas from "./components/Collections/Chromas.js";
 import CollectionsChampions from './components/Collections/main.js';
 import NightMarket from './components/NightMarket.js';
 import TftHome from './components/TFT/tftHome.js';
+import TftBattlepass from './components/TFT/TftBattlepass.js';
+import TftMatchHistory from './components/TFT/TftMatchHistory.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -36,6 +38,8 @@ root.render(
       <Route path="/collectionsWards" element={<CollectionsWards/>}></Route>
       <Route path="/collectionsChromas" element={<CollectionsChromas/>}></Route>
       <Route path="/tftHome" element={<TftHome/>}></Route>
+      <Route path="/tftBattlepass" element={<TftBattlepass/>}></Route>
+      <Route path="/tftHistory" element={<TftMatchHistory/>}></Route>
       <Route path="/nightmarket" element = {<NightMarket/>}/>
     </Routes>
   </BrowserRouter>
